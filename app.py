@@ -2,9 +2,9 @@ import os
 import gradio as gr
 from google import genai
 from google.genai import types
-from google.colab import userdata
+
 # Make sure to set the 'gemini_api' secret in Colab's 'Secrets' tab.
-api_key=userdata.get('gemini_api')
+api_key=os.get.env('gemini_api')
 client=genai.Client(api_key=api_key)
 client =genai.Client(api_key= "AQ.Ab8RN6JxpKnNo8IZtfK3-4hoZDWF_CNXlsSvtKTW-7esIndaBA")
 personalities = {
